@@ -4,7 +4,7 @@
 
 ## The Idea
 
-SOULINQ A two-player 2D platformer where players with entangled souls must navigate a world bombarded by *cosmic rays* attempting to observe their souls. The world is rife with *inner fire* capable of evolving their shared soul state. The goal is to be observed as alive.
+SOULINQ A realtime two-player 2D platformer where players with entangled souls must navigate a world bombarded by *cosmic rays* attempting to observe their souls. The world is rife with *inner fire* capable of evolving their shared soul state. The goal is to be observed as alive.
 
 ### Player Mechanics
 The two players spawn in a jungle world, procedurally generated using quantum randomness, where they can move around using `<WASD>`, jump using `<SPACE>`, and attack using the left-mouse button. The souls of the two players are represented as qubits in a 2-qubit quantum circuit, where $|0\rangle$ represents death and $|1\rangle$ represents life. Their shared soul state is initialized to a state $\frac1{N}(\alpha|00\rangle+\beta|11\rangle)$ such that $\alpha\gg\beta$; specifically $\alpha=0.9$ and $\beta=\sqrt{1-0.9^2}\approx0.436$. In this state, being observed by a cosmic ray would collapse both souls to the death state with high probability.
@@ -28,5 +28,6 @@ Cosmic rays spawn from the sky and chase the players. Their frequency is weighte
 ### Gameplay Strategies
 Players could adopt to play using a variety of strategies from collaborative ($|11\rangle$) to competitive ($|01\rangle$, $|10\rangle$) to spiteful ($|00\rangle$). Furthermore, the legendary gates and the swap weapon can allow for counterintuitive strategies attempting to raise the probability of the other player's soul being measured as alive before amplitudes and jumping into a laser immediately. 
 
-
+## Implementation
+The game is implemented using a Flask web server and a Unity game client. The two game clients stores the shared soul state and sends requests to the web server to simulate the soul state circuit and update the probabilities. Progress has been made on cosmic rays, combat, inner fire distribution, and map generation but was unable to make it into the final build. We hope to keep working on these aspects of the game.
 
