@@ -1,5 +1,7 @@
 # SOULINQ
 
+![screen_soulinq](https://user-images.githubusercontent.com/25019973/151709141-94df4f4b-a17c-4673-8f5f-b6141dc87210.png)
+
 ## The Idea
 
 SOULINQ A two-player 2D platformer where players with entangled souls must navigate a world bombarded by *cosmic rays* attempting to observe their souls. The world is rife with *inner fire* capable of evolving their shared soul state. The goal is to be observed as alive.
@@ -22,4 +24,9 @@ An additional weapon exists on the map that can be used once per game to act a S
 
 ### Cosmics Rays (Measurement)
 Cosmic rays spawn from the sky and chase the players. Their frequency is weighted by quantum randomness, and, as the game progresses, they move faster and track the player more accurately. When a cosmic ray comes in contact with a player, their soul is observed and its possible superposition collapses to either dead or alive. The end-game condition is the collapse of both players' souls, and a player wins if their souls is observed as alive. Note that the collapse of a single player's soul is not sufficient to determine their final state since the other player can resurrect/kill them by applying 2QB gates.
+
+### Gameplay Strategies
+Players could adopt to play using a variety of strategies from collaborative ($|11\rangle$) to competitive ($|01\rangle$, $|10\rangle$) to spiteful ($|00\rangle$). Furthermore, the legendary gates and the swap weapon can allow for counterintuitive strategies attempting to raise the probability of the other player's soul being measured as alive before amplitudes and jumping into a laser immediately. 
+
+
 
